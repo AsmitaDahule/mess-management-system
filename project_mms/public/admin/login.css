@@ -1,0 +1,26 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(45deg, #000000, #434343);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.container {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+input, button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+button {
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}

@@ -8,6 +8,7 @@ const authRoutes = require("./routes/authRoutes");
 const attendanceRoutes = require
 ("./routes/attendanceRoutes");
 const adminRoutes = require("./routes/adminRoutes");
+const paymentRoutes = require('./routes/paymentRoutes');
 
 
 const app = express();
@@ -40,7 +41,7 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use("/auth", authRoutes);
 app.use("/attendance", attendanceRoutes);
 app.use("/admin", adminRoutes);
-
+app.use('/payment', paymentRoutes);
 
 
 app.get("/home", (req, res) => {

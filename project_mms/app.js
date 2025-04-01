@@ -9,6 +9,7 @@ const attendanceRoutes = require
 ("./routes/attendanceRoutes");
 const adminRoutes = require("./routes/adminRoutes");
 const paymentRoutes = require('./routes/paymentRoutes');
+const feedbackRoutes = require("./routes/feedbackRoutes");
 
 
 const app = express();
@@ -42,6 +43,7 @@ app.use("/auth", authRoutes);
 app.use("/attendance", attendanceRoutes);
 app.use("/admin", adminRoutes);
 app.use('/payment', paymentRoutes);
+app.use("/feedback", feedbackRoutes);
 
 
 app.get("/home", (req, res) => {
